@@ -1,0 +1,167 @@
+html {
+    background-color: #d4f3ff;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+  }
+  
+  #formContent {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 50%;
+    position: relative;
+    padding: 0px;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    text-align: center;
+  }
+  
+  #formFooter {
+    background-color: #f6f6f6;
+    padding: 25px;
+    text-align: center;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  /* Titre */
+  h1 {
+    margin-bottom: 60px;
+    text-align: center;
+    font-family: 'Script MT';
+  }
+  
+  
+  /* Saisies */
+  input[type=text]{
+    background-color: #ffffff;
+    padding: 10px 25px;
+    text-align: left;
+    font-size: 16px;
+    margin: 5px 20px 10px 20px;
+    width: 65%;
+    border: 1.2px solid rgba(0,0,0,.2);
+    border-radius: 5px 5px 5px 5px;
+  }
+  
+  textarea{
+    background-color: #ffffff;
+    padding: 10px 25px;
+    text-align: left;
+    font-size: 16px;
+    margin: 5px 20px 30px 20px;
+    width: 70%;
+    height: 150px;
+    border: 1.2px solid rgba(0,0,0,.2);
+    border-radius: 5px 5px 5px 5px;
+  }
+
+  /* Boutons */
+    .creer  {
+    background-color: #74d1ff;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    float: right;
+    border: none;
+    padding: 12px 60px;
+    margin: 5px 40px 40px 40px;
+    border-radius: 6px 6px 6px 6px;
+  }
+
+    .annuler  {
+    background-color: #74d1ff;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    float: left;
+    border: none;
+    padding: 12px 40px;
+    margin: 5px 30px 40px 30px;
+    border-radius: 6px 6px 6px 6px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #39ace7;
+  }
+
+/* Message d'erreur */
+.msg {
+  color: red;
+  margin-top: 0%;
+}
+
+
+  /* ANIMATIONS */
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  @-webkit-keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  /* Simple CSS3 Fade-in Animation */
+  @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  
+  .fadeIn {
+    opacity:0;
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+  
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+  
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+  }
+  
+  *:focus {
+      outline: none;
+  } 
